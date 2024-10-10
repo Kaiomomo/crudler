@@ -20,6 +20,7 @@ export const App=() =>{
   //View---------ß
 
 
+<<<<<<< Updated upstream
   return (
     <NavigationContainer>
     <Stack.Navigator 
@@ -66,5 +67,24 @@ export const App=() =>{
   );
 };
 
+=======
+export const App=() =>{
+  return (
+    <View style={styles.container}>
+      <Text>Jennefier is gay </Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+>>>>>>> Stashed changes
 
 export default App;
