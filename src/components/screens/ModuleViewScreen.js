@@ -1,10 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 import Screen from '../layout/Screen';
+import ModuleView from '../entity/modules/ModuleView';
 
 
 
- const ModuleViewScreen=() =>{
-  //inisitilation----- 
+ const ModuleViewScreen=({navigation,route}) =>{
+  //inisitilation-------
+  const { module, onDelete} = route.params; 
+
   //State-----
   //Handlers-----
   //View---------
@@ -12,17 +15,21 @@ import Screen from '../layout/Screen';
 
   return (
 <Screen>
-
-
- <Text>View</Text>
-
+  <ModuleView module ={module} onDelete={onDelete}/>
   </Screen> 
 
 
 
   );
 };
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+
+
+
+ 
+});
+
+
 
 
 export default ModuleViewScreen;
