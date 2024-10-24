@@ -122,7 +122,7 @@ const styles = StyleSheet.create ({
             
 
         },
-        itemPickerPromptStyle:{
+      //doesnt work because it isnt compatiable with ios   itemPickerPromptStyle:{
             height:70,
             
             color:'red',
@@ -131,5 +131,5 @@ const styles = StyleSheet.create ({
 
 
 
-});
+);
 export default Form;
